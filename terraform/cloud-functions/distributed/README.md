@@ -149,17 +149,18 @@ Autoscaler infrastructure, with the exception of Cloud Scheduler, lives.
 5.  Enable the required Cloud APIs :
 
     ```sh
-    gcloud services enable iam.googleapis.com \
-        cloudresourcemanager.googleapis.com \
-        spanner.googleapis.com \
+    gcloud services enable \
         appengine.googleapis.com \
+        cloudbuild.googleapis.com \
+        cloudfunctions.googleapis.com  \
+        cloudresourcemanager.googleapis.com \
+        eventarc.googleapis.com \
         firestore.googleapis.com \
-        pubsub.googleapis.com \
+        iam.googleapis.com \
         logging.googleapis.com \
         monitoring.googleapis.com \
-        cloudfunctions.googleapis.com  \
-        cloudbuild.googleapis.com \
-        cloudresourcemanager.googleapis.com
+        pubsub.googleapis.com \
+        spanner.googleapis.com
     ```
 
 6.  Create a Google App Engine app, to enable the APIs for Cloud Scheduler and Firestore.
@@ -241,16 +242,19 @@ topic and function in the project where the Spanner instances live.
 5.  Use the following command to enable the Cloud APIs:
 
     ```sh
-    gcloud services enable iam.googleapis.com \
-        cloudresourcemanager.googleapis.com \
+    gcloud services enable
         appengine.googleapis.com \
-        spanner.googleapis.com \
-        pubsub.googleapis.com \
+        cloudbuild.googleapis.com \
+        cloudfunctions.googleapis.com \
+        cloudresourcemanager.googleapis.com \
+        cloudscheduler.googleapis.com \
+        eventarc.googleapis.com \
+        iam.googleapis.com \
         logging.googleapis.com \
         monitoring.googleapis.com \
-        cloudfunctions.googleapis.com \
-        cloudscheduler.googleapis.com \
-        cloudbuild.googleapis.com
+        pubsub.googleapis.com \
+        run.googleapis.com \
+        spanner.googleapis.com
     ```
 
 6.  Create an App to enable Cloud Scheduler, but do not create a Firestore
