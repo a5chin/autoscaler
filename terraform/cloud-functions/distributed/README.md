@@ -5,7 +5,8 @@
 
   <p align="center">
     <!-- In one sentence: what does the code in this directory do? -->
-    Set up the Autoscaler in Cloud Functions in a distributed deployment using Terraform
+    Set up the Autoscaler in Cloud Run functions in a distributed
+    deployment using Terraform
     <br />
     <a href="../../../README.md">Home</a>
     ·
@@ -19,7 +20,7 @@
     ·
     <a href="../README.md#Monitoring">Monitoring</a>
     <br />
-    Cloud Functions
+    Cloud Run functions
     ·
     <a href="../../gke/README.md">Google Kubernetes Engine</a>
     <br />
@@ -154,6 +155,7 @@ Autoscaler infrastructure, with the exception of Cloud Scheduler, lives.
         cloudbuild.googleapis.com \
         cloudfunctions.googleapis.com  \
         cloudresourcemanager.googleapis.com \
+        compute.googleapis.com \
         eventarc.googleapis.com \
         firestore.googleapis.com \
         iam.googleapis.com \
@@ -248,6 +250,7 @@ topic and function in the project where the Spanner instances live.
         cloudfunctions.googleapis.com \
         cloudresourcemanager.googleapis.com \
         cloudscheduler.googleapis.com \
+        compute.googleapis.com \
         eventarc.googleapis.com \
         iam.googleapis.com \
         logging.googleapis.com \

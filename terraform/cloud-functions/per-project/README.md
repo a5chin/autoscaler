@@ -5,7 +5,8 @@
 
   <p align="center">
     <!-- In one sentence: what does the code in this directory do? -->
-    Set up the Autoscaler in Cloud Functions in a per-project deployment using Terraform
+    Set up the Autoscaler in Cloud Run functions in a per-project
+    deployment using Terraform
     <br />
     <a href="../../../README.md">Home</a>
     ·
@@ -19,7 +20,7 @@
     ·
     <a href="../README.md#Monitoring">Monitoring</a>
     <br />
-    Cloud Functions
+    Cloud Run functions
     ·
     <a href="../../gke/README.md">Google Kubernetes Engine</a>
     <br />
@@ -148,6 +149,7 @@ In this section you prepare your project for deployment.
       cloudfunctions.googleapis.com \
       cloudresourcemanager.googleapis.com \
       cloudscheduler.googleapis.com \
+      compute.googleapis.com \
       eventarc.googleapis.com \
       firestore.googleapis.com \
       iam.googleapis.com \

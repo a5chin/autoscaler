@@ -71,7 +71,7 @@ resource "google_pubsub_topic_iam_member" "scaler_pubsub_sub_iam" {
 }
 
 
-// Cloud Functions
+// Cloud Run functions
 
 resource "google_storage_bucket" "bucket_gcf_source" {
   project                     = var.project_id
